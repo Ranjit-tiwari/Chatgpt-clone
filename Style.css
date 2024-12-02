@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Parkinson", sans-serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+    color: #B4B4B4
+}
+
+
+/* MAIN PART */
+.Big-container {
+    display: flex;
+}
+
+/* LEFT PART */
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 18%;
+    height: 100vh;
+    background-color: #171717;
+    padding: 15px 17px;
+}
+
+.upper-left {
+    display: flex;
+    justify-content: space-between;
+    color: #B4B4B4;
+    padding: 2px;
+
+}
+
+.upper-left>i {
+    border-radius: 10px;
+    padding: 5px 5px;
+}
+
+.upper-left>i:hover {
+    background-color: #373636;
+}
+
+.center-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.logo-name {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 7px;
+    width: 100%;
+    padding: 8px 7px;
+    border-radius: 10px;
+    transition: 0.2s all;
+}
+
+.logo-name>img {
+    color: #B4B4B4;
+    border-radius: 50%;
+    width: 22px;
+    height: 17px;
+}
+
+.logo-name>p {
+    font-size: 11px;
+    font-weight: 0;
+}
+
+
+.logo-name>i {
+    font-size: large;
+
+    border-radius: 50%;
+    background-color: #000;
+    padding: 2px;
+}
+
+.logo-name:hover {
+
+    background-color: #212121;
+}
+
+
+.mid-center {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 8px 7px;
+}
+
+.mid-center>p {
+    font-size: 8px;
+}
+
+.mid-center-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    gap: 8px;
+
+}
+
+.mid-center-content>p {
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.mid-center-content>p:hover {
+    background-color: #212121;
+}
+
+.left-bottom {
+    display: flex;
+    align-items: center;
+    padding: 8px 7px;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 15px;
+}
+.left-bottom>i{
+    border: 1px solid #B4B4B4;
+    border-radius: 50%;
+    padding: 3px;
+   
+    
+}
+.left-bottom:hover{
+    background-color: #212121;
+    border-radius: 10px;
+}
+.sub-bottom{
+    display: flex;
+    flex-direction: column;
+   gap: 5px;
+}
+.upgrade{
+    font-size: 13px;
+}
+.content{
+    font-size: 8px;
+}
+
+/* RIGHT PART */
+.right {
+    background-color: #212121;
+    width: 100%;
+    padding: 15px 17px;
+
+}
+
+.upper-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.upper-right>p {
+    font-size: 13px;
+    color: white;
+    background-color: #95A5A6;
+    padding: 8px 6px;
+    border-radius: 50%;
+}
+
+.upper-right>p:hover {
+    box-shadow: 0px 0px 5px 0.2 #5e5959;
+}
+
+.gpt {
+    display: flex;
+    gap: 2px;
+    border-radius: 8px;
+    padding: 8px 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.gpt:hover {
+    background-color: #373636;
+}
+
+.center-right {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.Heading {
+    font-size: 24px;
+    color: #ffffff;
+    transition: slide 0.8s ease-in-out;
+}
+
+.input-field {
+    padding: 10px 12px;
+    border-radius: 18px;
+    width: 600px;
+
+    background-color: #373636;
+}
+
+.input {
+    margin-bottom: 20px;
+    border: none;
+    width: 570px;
+    background-color: #373636;
+}
+
+.input::placeholder {
+    font-size: 15px;
+    background-color: #373636;
+    border: none;
+    outline: none;
+    height: 20px;
+}
+
+.input:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.attach-submit {
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #373636;
+}
+
+.attach-submit>i:nth-child(1) {
+    font-size: 20px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #B4B4B4;
+    border-radius: 18px;
+    padding: 8px 10px;
+    cursor: pointer;
+    gap: 5px;
+    transition: 0.3s all;
+}
+
+.tag>p {
+    font-size: 11px;
+}
+
+.tag:hover {
+    background-color: #373636;
+}
+
+.footer {
+    font-size: 9px;
+    text-align: center;
+    margin-top: 28px;
+
+
+}
+
+@keyframes slide {
+    0% {
+        .Heading {
+            display: none;
+        }
+    }
+
+    100% {
+        display: block;
+    }
+}
