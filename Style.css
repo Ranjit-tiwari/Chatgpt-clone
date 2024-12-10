@@ -61,6 +61,7 @@
     padding: 8px 7px;
     border-radius: 10px;
     transition: 0.2s all;
+    cursor: pointer;
 }
 
 .logo-name>img {
@@ -106,6 +107,7 @@
     flex-direction: column;
     font-size: 11px;
     gap: 8px;
+    cursor: pointer;
 
 }
 
@@ -125,6 +127,7 @@
     justify-content: space-between;
     gap: 5px;
     margin-top: 15px;
+    cursor: pointer;
 }
 .left-bottom>i{
     border: 1px solid #B4B4B4;
@@ -203,6 +206,35 @@
     transition: slide 0.8s ease-in-out;
 }
 
+.typing-animation{
+    font-size: 2rem;
+    border-right: 2px solid #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: typing 4s steps(30,end), blink-caret 0.5 step-end infinite;
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 24ch;
+    }
+    
+}
+
+@keyframes blink-caret {
+    from,to{
+        border-color: transparent;
+
+    }
+    50%{
+        border-color: white;
+    }
+}
+
 .input-field {
     padding: 10px 12px;
     border-radius: 18px;
@@ -238,6 +270,7 @@
     justify-content: space-between;
     align-items: center;
     color: #373636;
+    cursor:-moz-grab;
 }
 
 .attach-submit>i:nth-child(1) {
